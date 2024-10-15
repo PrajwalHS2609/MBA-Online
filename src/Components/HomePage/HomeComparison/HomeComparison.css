@@ -1,0 +1,75 @@
+.homeComparison {
+  /* border: solid red; */
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.homeComparisonCard {
+  width: 250px;
+  height: fit-content;
+  border-left: 5px solid var(--customColor1);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px grey;
+}
+#homeComparisonCard2 {
+  width: 250px;
+  height: fit-content;
+  border-left: 5px solid var(--customColor2);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px grey;
+}
+.homeComparisonContent {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.homeComparisonContent > p {
+  text-align: justify;
+}
+.homeComparisonCard > h4 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.homeComparisonCard > p {
+  text-align: justify;
+}
+.homeComparisonContent:nth-child(1) {
+  padding: 20px;
+}
+.homeComparisonContent > h2 {
+  font-size: 40px;
+  text-align: start;
+  width: 100%;
+}
+.homeComparisonCard > h6 {
+  font-weight: bold;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .homeComparison {
+    /* border: solid red; */
+    flex-direction: column;
+  }
+  .homeComparisonContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .homeComparisonContent > h2 {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+  }
+}

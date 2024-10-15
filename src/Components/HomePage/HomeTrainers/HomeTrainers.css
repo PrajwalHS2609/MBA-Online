@@ -1,0 +1,127 @@
+.homeTrainers {
+  width: 100%;
+  /* border: solid red; */
+  background-image: url(./../../../Imgs/trainerBanner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.homeTrainersHead {
+  /* border: solid green; */
+  width: 100%;
+  text-align: center;
+}
+.homeTrainersHead > h2 {
+  font-size: 30px;
+  color: white;
+  font-weight: bolder;
+}
+.homeTrainersHead > p {
+  font-size: 18px;
+  color: grey;
+}
+.homeTrainersMain {
+  /* border: solid yellow; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+}
+.homeTrainersCard {
+  /* border: solid red; */
+  width: 300px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+.homeTrainersCardImg {
+  height: 350px;
+  width: 100%;
+}
+.homeTrainersCardImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.wrapper > span {
+  /* border: solid; */
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 15px;
+  background-color: rgba(139, 139, 242, 0.608);
+  color: white;
+}
+.homeTrainersCardConsult {
+  /* border: solid blue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.homeTrainersCardConsult > button {
+  background-color: var(--customColor2);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+.wrapper > h5 {
+  font-weight: bolder;
+}
+.wrapper {
+  /* border: solid red; */
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: scale(0.8);
+}
+.homeTrainersCardConsult > button > a {
+  color: white;
+  text-decoration: none;
+}
+.homeTrainersRating {
+  /* border: solid red; */
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 2px;
+  padding-right: 5px;
+  border-radius: 5px;
+  background-color: rgba(6, 6, 6, 0.364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: white;
+}
+.rateIcon {
+  color: var(--customColor2);
+}

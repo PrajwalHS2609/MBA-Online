@@ -1,0 +1,238 @@
+.footer {
+  /* border: solid red; */
+  width: 100%;
+  background-color: #000e23;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.footerContent1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.footerBio {
+  /* border: solid blue; */
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.footerBio > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.footerBio > li {
+  list-style: none;
+  color: white;
+  text-align: justify;
+}
+.footerSocial {
+  /* border: solid green; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.footerSocialContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+.footerSocialContent > li {
+  list-style: none;
+}
+.footerSocial > h4 {
+  width: 100%;
+  text-align: start;
+  color: white;
+}
+.footerSocialIco {
+  color: white;
+  padding: 10px;
+  border-radius: 100%;
+  font-size: 20px;
+  background-color: var(--customColor1);
+}
+/* ----------------FooterUniversity------------------ */
+.footerUniversity {
+  width: 300px;
+}
+.footerUniversity > h4 {
+  color: white;
+  padding: 10px;
+}
+.footerUniversity > ul > li {
+  list-style: none;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.footerUniversity > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+/* --------------------footerContent2------------------- */
+.footerContent2 {
+  /* border: solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+}
+.footerContent2 > img {
+  width: 200px;
+  height: 100%;
+  object-fit: contain;
+}
+.footerContent2 > p {
+  width: 800px;
+  font-size: 13px;
+  color: white;
+  text-align: justify;
+}
+/* -------------------footerContact-------------------------------- */
+.footerContact {
+  /* border: solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.footerContact > h4 {
+  color: white;
+}
+/* -------------------footerContactContent1------------------ */
+.footerContactContent1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.footerContactIco {
+  color: white;
+  font-size: 20px;
+}
+.footerContactContent1 > a {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+/* -----------------------footerContactContent2-------------------- */
+.footerContactContent2 {
+  border: 1px solid white;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.footerContactContent2 > span {
+  position: absolute;
+  top: -10px;
+  background-color: var(--customColor2);
+  color: white;
+  font-size: 13px;
+  padding: 2px;
+  border-radius: 5px;
+}
+.footerContactContent2 > a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+/* -------------------------footerContent3----------------------- */
+.footerContent3 {
+  /* border: solid blue; */
+  width: 100%;
+  background-color: var(--customColor1);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.footerLinks li {
+  list-style: none;
+  margin: 10px;
+}
+.footerLinks > li > a {
+  color: white;
+  text-decoration: none;
+}
+.footerContent3 > p {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+.footerContent3 > p > a {
+  color: white;
+  text-decoration: none;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .footer {
+    /* border: solid red; */
+    padding: 0px;
+  }
+  .footerContent1 {
+    flex-direction: column;
+  }
+  .footerBio {
+    /* border: solid blue; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .footerUniversity {
+    width: 100%;
+    padding: 20px;
+  }
+  .footerContent2 {
+    /* border: solid red; */
+    padding: 10px;
+    flex-direction: column;
+  }
+  .footerContent2 > p {
+    width: 300px;
+    font-size: 13px;
+    color: white;
+    text-align: justify;
+  }
+  .footerContent3 {
+    /* border: solid blue; */
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footerLinks {
+    flex-direction: column;
+  }
+}
