@@ -26,13 +26,12 @@ const HomeComparison = () => {
           para="Online & Distance Education Colleges & Universites Listed on Learning Routes"
         />
         <HomeComparisonCard
-          id=""
+          id="homeComparisonCard2"
           no="100%"
           txt="Unbiased Experts"
           para="Guidance by our Certified Counsellors"
         />
         <HomeComparisonCard
-          id="homeComparisonCard2"
           no="100%"
           txt="Complete Assistance"
           para="Till you Complete your Degree"

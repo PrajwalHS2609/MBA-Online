@@ -7,7 +7,6 @@ const HomeApprovedCard = (props) => {
       <Link to={"/"}>
         {" "}
         <img src={props.img} alt={props.alt} />
-        <p>{props.head}</p>
       </Link>
     </div>
   );

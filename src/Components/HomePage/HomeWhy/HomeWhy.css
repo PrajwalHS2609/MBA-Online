@@ -1,0 +1,69 @@
+.homeWhyContainer {
+  /* border: solid red; */
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.homeWhyHead {
+  width: 100%;
+}
+.homeWhyHead > h2 {
+  font-size: 40px;
+  width: 100%;
+  text-align: start;
+}
+.homeWhyMain {
+  /* border: solid blue; */
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.homeWhyCard {
+  /* border: solid green; */
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px grey;
+  text-align: start;
+}
+.homeWhyCardImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.homeWhyCard > h5 {
+  color: var(--customColor1);
+  text-align: start;
+  width: 100%;
+}
+.homeWhyCardImg {
+  /* border: solid; */
+  width: fit-content;
+  height: 100px;
+}
+.homeWhyCard > p {
+  color: grey;
+  font-size: 14px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .homeWhyMain {
+    gap: 30px;
+  }
+  .homeWhyHead > h2 {
+    text-align: center;
+  }
+}

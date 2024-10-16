@@ -6,7 +6,9 @@
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
-:root{
-  --customColor1:#0C2D50;
-  --customColor2:#E89E26;
+:root {
+  --customColor1: #0c2d50;
+  /* --customColor2:#E89E26; */
+  --customColor2: #ff2230;
+  --customColor3: #fff6f4;
 }

@@ -1,7 +1,7 @@
 .navBarContainer {
   /* border: solid red; */
   width: 100%;
-  height: 100%;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,9 +25,10 @@
   align-items: center;
 }
 .logo > img {
-  width: 50%;
+  width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  transform: scale(0.9);
 }
 .menuContainer {
   /* border: solid brown; */
@@ -36,26 +37,22 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 10px;
 }
-.menuContainerWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  /* border: solid green; */
-  height: 100%;
-  width: fit-content;
-}
+
 .menuContainerWrapper {
   /* border: solid greenyellow; */
   list-style: none;
   height: 100%;
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
-  padding: 8px;
+  padding: 0px;
   border-radius: 5px;
+  background-color: var(--customColor1);
+  cursor: default;
 }
 .menuContainerWrapper > li {
   color: white;
@@ -73,23 +70,14 @@
   align-items: center;
   gap: 10px;
 }
-.menuContainerWrapper:nth-child(1) {
-  background-color: var(--customColor2);
-  cursor: default;
-  &:hover {
-    background-color: #014487;
-  }
-}
-.menuContainerWrapper:nth-child(2) {
-  background-color: var(--customColor1);
-}
-.menuContainerWrapper:nth-child(2) > li {
+
+.menuContainerWrapper > li {
   /* border: solid; */
   padding-left: 5px;
   padding-right: 5px;
   border-radius: 5px;
   &:hover {
-    background-color: #e89e268f;
+    background-color: rgba(222, 27, 27, 0.655);
   }
 }
 .menuNavIcon1 {
@@ -237,10 +225,7 @@
   .menuContainerList {
     display: none;
   }
-  .logoContainer {
-    /* border: solid green; */
-    width: 100px;
-  }
+
   .navbarContent {
     /* border: solid brown; */
     border-radius: 0px;
@@ -249,9 +234,7 @@
     /* border: solid red; */
     display: block;
   }
-}
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
   .menuContainerWrapper {
     display: none;
   }
@@ -267,6 +250,6 @@
   .logo > img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 }

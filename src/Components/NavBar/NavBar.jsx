@@ -1,14 +1,14 @@
 import React from "react";
 import "./NavBar.css";
-import UpperNav from "./UpperNav/UpperNav";
+// import UpperNav from "./UpperNav/UpperNav";
 import Menu from "./Menu";
 import Logo from "./Logo";
 const NavBar = () => {
   return (
     <div className="navBarContainer">
-      <div className="navBarWrapper">
+      {/* <div className="navBarWrapper">
         <UpperNav/>
-      </div>
+      </div> */}
       <div className="navBarWrapper">
         <Logo/>
         <Menu/>

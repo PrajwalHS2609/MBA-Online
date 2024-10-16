@@ -1,12 +1,13 @@
 .homeUniversitiesContainer {
   /* border: solid red; */
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
+  background-color: var(--customColor1);
 }
 .homeUniversitiesContent {
   width: 100%;
@@ -47,7 +48,7 @@
   border: solid white;
   background-color: var(--customColor2);
   color: white;
-  &:hover{
+  &:hover {
     background-color: var(--customColor1);
   }
 }

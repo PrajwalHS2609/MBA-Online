@@ -1,0 +1,168 @@
+.homeEnquiry {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  /* border: solid pink; */
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeEnquiryContact > h2 {
+  color: var(--customColor1);
+  font-size: 40px;
+  width: 100%;
+}
+.homeEnquiryContent {
+  /* border: solid green; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homeEnquiryContent > img {
+  width: 100%;
+}
+.homeEnquiryContact {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+}
+.homeEnquiryContact-Content {
+  /* border: solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+.homeEnquiryContactCard {
+  border-left: 5px solid var(--customColor2);
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  box-shadow: 0 0 5px grey;
+  cursor: pointer;
+}
+.homeEnquiryIcon {
+  color: var(--customColor1);
+  font-size: 20px;
+}
+#homeEnquiryContactCard-whats {
+  border-left: 5px solid var(--customColor2);
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  box-shadow: 0 0 5px grey;
+  cursor: pointer;
+}
+#homeEnquiryContactCard-whats > a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+/* ---------------------------homeEnquiryForm------------------------ */
+.homeEnquiryForm {
+  /* border: solid orange; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.434);
+  top: 0;
+  right: 0;
+  backdrop-filter: blur(10px);
+  overflow: scroll;
+}
+.homeEnquiryForm > div {
+  width: 40%;
+  text-align: end;
+  padding: 10px;
+}
+.homeEnquiryFormIcon {
+  color: var(--customColor2);
+  cursor: pointer;
+  font-size: 30px;
+}
+.homeEnquiryForm > form {
+  border-top: solid 5px var(--customColor2);
+  box-shadow: 0 0px 10px rgba(255, 0, 0, 0.499);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  width: 400px;
+  background-color: white;
+}
+.homeEnquiryForm > form > input {
+  border: none;
+  outline: none;
+  border-bottom: solid 2px black;
+  width: 100%;
+  padding: 5px;
+}
+.homeEnquiryForm > form > select {
+  border: none;
+  outline: none;
+  border-bottom: solid 2px black;
+  width: 100%;
+  padding: 5px;
+}
+.homeEnquiryForm > form > textarea {
+  border: none;
+  outline: none;
+  border-bottom: solid 2px black;
+  width: 100%;
+  padding: 5px;
+}
+.homeEnquiryFormBtn > button {
+  padding: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--customColor1);
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .homeEnquiry {
+    flex-direction: column-reverse;
+  }
+  .homeEnquiryContent {
+    /* border: solid green; */
+    width: 100%;
+  }
+  .homeEnquiryForm > form {
+    border-top: solid 5px var(--customColor2);
+    box-shadow: 0 0px 10px rgba(255, 0, 0, 0.499);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 300px;
+  }
+  .homeEnquiryForm > div {
+    width: 100%;
+    text-align: end;
+    padding: 10px;
+  }
+}

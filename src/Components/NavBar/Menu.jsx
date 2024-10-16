@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import "./NavBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faChevronRight,
   faChevronDown,
   faX,
   faPhoneVolume,
@@ -45,29 +44,23 @@ const Menu = () => {
   };
   return (
     <div className="menuContainer">
+
       <div className="menuContainerWrapper">
-        {" "}
-        <li>
+      <li>
+          <Link>Home</Link>
+        </li>
+      <li>
           Explore Courses
           <FontAwesomeIcon
             icon={faChevronDown}
             className="menuNavIcon1"
           ></FontAwesomeIcon>
         </li>
-      </div>
-      <div className="menuContainerWrapper">
         <li>
-          Top University{" "}
-          <FontAwesomeIcon
-            icon={faChevronDown}
-            className="menuNavIcon1"
-          ></FontAwesomeIcon>
+          <Link>About</Link>
         </li>
         <li>
-          <Link>LR Tag</Link>
-        </li>
-        <li>
-          <Link>Work With Us</Link>
+          <Link>Careers</Link>
         </li>
         <li>
           <Link>Blog</Link>

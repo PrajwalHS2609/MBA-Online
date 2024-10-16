@@ -1,25 +1,22 @@
 import React from "react";
 import "./HomeApproved.css";
 import HomeApprovedCard from "./HomeApprovedCard";
+import wes from "./../../../Imgs/Approved/WES.png";
+import nirf from "./../../../Imgs/Approved/NIRF.png";
+import qaa from "./../../../Imgs/Approved/QAA.png";
+import ugc from "./../../../Imgs/Approved/UGC.png";
+import naac from "./../../../Imgs/Approved/NAAC.png";
+import aicte from "./../../../Imgs/Approved/AICTE.png";
+
 const HomeApproved = () => {
   return (
     <div className="homeApproved">
-      <HomeApprovedCard
-        img="https://distanceeducationschool.com/wp-content/uploads/2023/08/top-mba.webp"
-        head="Top 10 MBA Universities in India"
-      />
-      <HomeApprovedCard
-        img="https://distanceeducationschool.com/wp-content/uploads/2024/07/yellow-ugc-logo-60-px-6698b72e002cb-6698b9a49154c.webp"
-        head="UGC-DEB Approved Universities 2024"
-      />
-      <HomeApprovedCard
-        img="https://distanceeducationschool.com/wp-content/uploads/2023/08/top-mca.webp"
-        head="Top 10 MCA Universities in India"
-      />
-      <HomeApprovedCard
-        img="https://distanceeducationschool.com/wp-content/uploads/2022/08/nirf-universities-e1685967622748.png"
-        head="NIRF Ranked Universities 2024"
-      />
+      <HomeApprovedCard img={ugc} />
+      <HomeApprovedCard img={wes} />
+      <HomeApprovedCard img={nirf} />
+      <HomeApprovedCard img={naac} />
+      <HomeApprovedCard img={aicte} />
+      <HomeApprovedCard img={qaa} />
     </div>
   );
 };
