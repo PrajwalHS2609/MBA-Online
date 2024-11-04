@@ -7,34 +7,34 @@ const OnlineMbaSpec = () => {
       <h4>Online MBA Specialisations</h4>
       <ul>
         <li>
-          <Link to={"/"}>Business Management</Link>
+          <Link to={"/"}>MBA (General Management)</Link>
         </li>
         <li>
-          <Link to={"/"}>Data Science</Link>
+          <Link to={"/"}>MBA (Finance)</Link>
         </li>
         <li>
-          <Link to={"/"}>Entrepreneurship</Link>
+          <Link to={"/"}>MBA (Marketing)</Link>
         </li>
         <li>
-          <Link to={"/"}>Financial Management</Link>
+          <Link to={"/"}>MBA (HR Management)</Link>
         </li>
         <li>
-          <Link to={"/"}>Healthcare Management</Link>
+          <Link to={"/"}>MBA (Operation)</Link>
         </li>
         <li>
-          <Link to={"/"}>Human Resources Management</Link>
+          <Link to={"/"}>MBA (Information Technology)</Link>
         </li>
         <li>
-          <Link to={"/"}>International Business</Link>
+          <Link to={"/"}>MBA (Supply Chain Management)</Link>
         </li>
         <li>
-          <Link to={"/"}>Marketing</Link>
+          <Link to={"/"}>MBA (Data Analytics)</Link>
         </li>
         <li>
-          <Link to={"/"}>Operations Management</Link>
+          <Link to={"/"}>MBA (Business Analytics)</Link>
         </li>
         <li>
-          <Link to={"/"}>Retail Management</Link>
+          <Link to={"/"}>MBA (Hospitality Management)</Link>
         </li>
       </ul>
     </div>

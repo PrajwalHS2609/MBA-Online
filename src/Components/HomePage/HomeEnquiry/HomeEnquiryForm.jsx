@@ -8,7 +8,7 @@ const HomeEnquiryForm = () => {
   };
   return (
     <div className="homeEnquiryForm">
-      <div>
+      <div className="formExit">
         {" "}
         <FontAwesomeIcon
           icon={faX}
@@ -17,21 +17,42 @@ const HomeEnquiryForm = () => {
         ></FontAwesomeIcon>
       </div>
       <form action="">
-        <input type="text" name="" id="" placeholder="Name" />
-        <input type="text" name="" id="" placeholder="Email" />
-        <input type="text" name="" id="" placeholder="Phone" />
-
+        <input type="text" name="" id="" placeholder="Your Name" required />
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Your Email Address"
+          required
+        />
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Your Phone Number"
+          required
+        />
         <select name="" id="">
-          <option value="">Select Your Option</option>
-          <option value="">KA</option>
-          <option value="">TN</option>
-          <option value="">AP</option>
-          <option value="">ND</option>
-          <option value="">PU</option>
+          <option value="">Select Course</option>
+          <option value="">MBA (General Management)</option>
+          <option value="">MBA (Finance)</option>
+          <option value="">MBA (Marketing)</option>
+          <option value="">MBA (HR Management)</option>
+          <option value="">MBA (Information Technology)</option>
+          <option value="">MBA (Supply Chain Management)</option>
+          <option value="">MBA (Data Analytics)</option>
+          <option value="">MBA (Business Analytics)</option>
         </select>
-        <textarea name="" id="" placeholder="Message"></textarea>
+        <div className="privacy">
+          {" "}
+          <input type="checkbox" name="check" id="check" required checked />I
+          authorise R18 Education - Online MBA and its associates to contact me
+          with updates & notifications via Email, SMS, WhatsApp, and Voice call
+          as per the Privacy Policy. This consent will override any registration
+          for DNC / NDNC
+        </div>
         <div className="homeEnquiryFormBtn">
-          <button>Book Free Counselling</button>
+          <button>I'm Interested</button>
         </div>
       </form>
     </div>

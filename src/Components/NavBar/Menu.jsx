@@ -1,17 +1,18 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import "./NavBar.css";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faChevronDown,
+  // faChevronDown,
   faX,
   faPhoneVolume,
 } from "@fortawesome/free-solid-svg-icons";
+import { NavHashLink } from "react-router-hash-link";
 import menuBar from "./../../Imgs/menu.png";
 import { Link } from "react-router-dom";
 const Menu = () => {
-  let [drop, setDrop] = useState(false);
-  let dropRefHome = useRef();
-  let dropRef = useRef();
+  // let [drop, setDrop] = useState(false);
+  // let dropRefHome = useRef();
   let showSideBar = () => {
     const sideBar = document.querySelector(".respMenu");
     const sideBar2 = document.querySelector(".innerRespMenu");
@@ -29,44 +30,46 @@ const Menu = () => {
     sideBar2.style.display = "flex";
     sideBar2.style.transform = "translateX(100%)";
   };
-  let handleDropDown = () => {
-    if (!drop) {
-      setDrop(true);
-      dropRef.current.style.display = "flex";
-      dropRefHome.current.style.display = "flex";
-      console.log("down");
-    } else {
-      setDrop(false);
-      dropRef.current.style.display = "none";
-      dropRefHome.current.style.display = "none";
-      console.log("up");
-    }
-  };
+  // let handleDropDown = () => {
+  //   if (!drop) {
+  //     setDrop(true);
+  //     dropRefHome.current.style.display = "flex";
+  //     console.log("down");
+  //   } else {
+  //     setDrop(false);
+  //     dropRefHome.current.style.display = "none";
+  //     console.log("up");
+  //   }
+  // };
   return (
     <div className="menuContainer">
-
       <div className="menuContainerWrapper">
-      <li>
-          <Link>Home</Link>
-        </li>
-      <li>
-          Explore Courses
-          <FontAwesomeIcon
-            icon={faChevronDown}
-            className="menuNavIcon1"
-          ></FontAwesomeIcon>
+        <li>
+          <Link to={"/"} smooth>
+            Home
+          </Link>
         </li>
         <li>
-          <Link>About</Link>
+          <NavHashLink to={"#homeCoursesNav"} smooth>
+            {" "}
+            Explore Courses
+          </NavHashLink>
         </li>
         <li>
-          <Link>Careers</Link>
+          <NavHashLink to={"#homeUniversities"} smooth>
+            {" "}
+            Universities
+          </NavHashLink>
         </li>
         <li>
-          <Link>Blog</Link>
+          <NavHashLink to={"#homeComparisonAbt"} smooth>
+            About
+          </NavHashLink>
         </li>
         <li>
-          <Link>Contact Us</Link>
+          <NavHashLink to={"#contactUsNav"} smooth>
+            Contact Us
+          </NavHashLink>
         </li>
       </div>
       <div className="respMenuBar">
@@ -82,86 +85,55 @@ const Menu = () => {
           ></FontAwesomeIcon>
           <div className="innerMenu">
             <li className="">
-              <a id="menuLink" href="tel:1234567890" onClick={hideSideBar}>
+              <a id="menuLink" href="tel:6362946008" onClick={hideSideBar}>
                 <FontAwesomeIcon
                   icon={faPhoneVolume}
                   className="menuNavDropIcon"
                 ></FontAwesomeIcon>
-                +91 1234567890
+                +91 6362946008{" "}
               </a>{" "}
             </li>
             <li className="">
               {" "}
-              <span>
+              <Link id="menuLink" onClick={hideSideBar} to={"/"}>
+                Home{" "}
+              </Link>
+            </li>
+            <li className="respDropDown">
+              {" "}
+              <NavHashLink to={"#homeCoursesNav"} smooth onClick={hideSideBar}>
                 ExploreCourses{" "}
-                <FontAwesomeIcon
-                  icon={faChevronDown}
-                  className="menuNavDropIcon"
-                  onClick={handleDropDown}
-                ></FontAwesomeIcon>
-              </span>{" "}
+              </NavHashLink>{" "}
             </li>
             <li className="">
               {" "}
-              <span>
-                Top Universities{" "}
-                <FontAwesomeIcon
-                  icon={faChevronDown}
-                  className="menuNavDropIcon"
-                  onClick={handleDropDown}
-                ></FontAwesomeIcon>
-              </span>{" "}
+              <NavHashLink
+                id="menuLink"
+                onClick={hideSideBar}
+                to={"#homeUniversities"}
+              >
+                Universities
+              </NavHashLink>
             </li>
             <li className="">
               {" "}
-              <Link id="menuLink" onClick={hideSideBar} to={"/"}>
-                LR Tag{" "}
-              </Link>
+              <NavHashLink
+                id="menuLink"
+                onClick={hideSideBar}
+                to={"#homeComparisonAbt"}
+              >
+                About{" "}
+              </NavHashLink>
             </li>
             <li className="">
               {" "}
-              <Link id="menuLink" onClick={hideSideBar} to={"/"}>
-                Blogs
-              </Link>
-            </li>
-            <li className="">
-              {" "}
-              <Link id="menuLink" onClick={hideSideBar} to={"/contact-us"}>
+              <NavHashLink
+                id="menuLink"
+                onClick={hideSideBar}
+                to={"#contactUsNav"}
+              >
                 Contact Us
-              </Link>
-            </li>
-            <div className="menuLine"></div>
-
-            <li className="">
-              {" "}
-              <Link id="menuLink" onClick={hideSideBar} to={"/"}>
-                Top Universities and College{" "}
-              </Link>
-            </li>
-
-            <li className="">
-              {" "}
-              <Link id="menuLink" onClick={hideSideBar} to={"/"}>
-                Trending Courses
-              </Link>
-            </li>
-            <li className="">
-              {" "}
-              <Link id="menuLink" onClick={hideSideBar} to={"/"}>
-                Study Abroad
-              </Link>
-            </li>
-            <li className="">
-              {" "}
-              <Link id="menuLink" onClick={hideSideBar} to={"/"}>
-                Entrance Exam{" "}
-              </Link>
-            </li>
-            <li className="">
-              {" "}
-              <Link id="menuLink" onClick={hideSideBar} to={"/"}>
-                Web Stories{" "}
-              </Link>
+              </NavHashLink>
             </li>
           </div>
         </div>

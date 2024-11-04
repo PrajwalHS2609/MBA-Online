@@ -8,6 +8,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   gap: 30px;
+  background-color: white;
 }
 .homeWhyHead {
   width: 100%;
@@ -16,15 +17,19 @@
   font-size: 40px;
   width: 100%;
   text-align: start;
+  color: var(--customColor2);
 }
 .homeWhyMain {
   /* border: solid blue; */
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 10px;
+  border-radius: 20px;
+  width: 85%;
+  padding: 30px;
   flex-wrap: wrap;
+  background-color: var(--customColor3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 .homeWhyCard {
   /* border: solid green; */
@@ -59,11 +64,122 @@
   color: grey;
   font-size: 14px;
 }
+.homeWhyWrapper > ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.homeWhyWrapper > ul > li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.homeWhyWrapper > ul > li > img {
+  width: 30px;
+  height: 30px;
+}
+.homeWhyMainBtn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.homeWhyMainBtn > button {
+  background-color: var(--customColor2);
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.homeWhyMainBtn > button:hover .whyIcon {
+  animation: bell 800ms infinite linear;
+}
+@keyframes bell {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.homeWhyWrapper {
+  /* border: solid; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+/* .homeWhyWrapper:nth-child(2) {
+  margin-top: 200px;
+} */
+.homeWhyWrapper > img {
+  width: 100%;
+  height:700px ;
+  object-fit: contain;
+  /* transform: scale(0.9); */
+}
+.homeWhyMainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .homeWhyMain {
     gap: 30px;
   }
   .homeWhyHead > h2 {
     text-align: center;
+  }
+  .homeWhyMain {
+    /* border: solid blue; */
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .homeWhyMainContainer {
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 100px;
+  }
+  .homeWhyWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .homeWhyWrapper > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }

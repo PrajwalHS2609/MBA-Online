@@ -1,12 +1,12 @@
 import React from 'react'
 import "./HomeTestimonial.css"
 import HomeTestimonialHead from './HomeTestimonialHead'
-import HomeTestimonialMain from './HomeTestimonialMain'
+import HomeTestimonialMain1 from './HomeTestimonialMain1'
 const HomeTestimonial = () => {
   return (
     <div className='homeTestimonial'>
       <HomeTestimonialHead/>
-      <HomeTestimonialMain/>
+      <HomeTestimonialMain1/>
     </div>
   )
 }

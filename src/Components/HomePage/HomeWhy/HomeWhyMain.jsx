@@ -1,34 +1,69 @@
 import React from "react";
 import "./HomeWhy.css";
-import HomeWhyCard from "./HomeWhyCard";
-import faculty from "./../../../Imgs/WhyImg/graduation.png";
-import placement from "./../../../Imgs/WhyImg/hiring.png";
-import read from "./../../../Imgs/WhyImg/reading-book.png";
-import career from "./../../../Imgs/WhyImg/career-path.png";
-
+import check from "./../../../Imgs/check.png";
+import HomeWhyHead from "./HomeWhyHead";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
+import whyBanner from "./../../../Imgs/WhyImg/WhyBanner.png";
 const HomeWhyMain = () => {
   return (
     <div className="homeWhyMain">
-      <HomeWhyCard
-        img={faculty}
-        head="Top Indian & Global Faculty"
-        para="Get a world-class education form the faculty with rich academic and industry experience"
-      />
-      <HomeWhyCard
-        img={career}
-        head="Career Services For Job Readiness"
-        para="Take masters classes from for interview preparation & resume building sessions while pursuing your degree"
-      />
-      <HomeWhyCard
-        img={read}
-        head="Choose The Way You Want To Learn"
-        para="Enhance your learning potential through your choice of printed books ,audio books ,e-books,videos and campus library resources"
-      />
-      <HomeWhyCard
-        img={placement}
-        head="Placement Assistance"
-        para="Ensure a smooth job transition with placement opportunities from over 500+ hiring partners across domains"
-      />
+      <div className="homeWhyMainContainer">
+        <div className="homeWhyWrapper">
+          <HomeWhyHead />
+
+          <ul>
+            <li>
+              <img src={check} alt="" />
+              Flexible schedule & timings
+            </li>
+            <li>
+              <img src={check} alt="" />
+              Affordable, premium options
+            </li>
+            <li>
+              <img src={check} alt="" />
+              Wide range of courses
+            </li>
+            <li>
+              <img src={check} alt="" />
+              Easy access to materials
+            </li>
+            <li>
+              <img src={check} alt="" />
+              Job placements & career opportunities
+            </li>
+            <li>
+              <img src={check} alt="" />
+              Advanced learning ecosystem
+            </li>
+            <li>
+              <img src={check} alt="" />
+              Personalized learning approach
+            </li>
+            <li>
+              <img src={check} alt="" />
+              Free career counseling
+            </li>
+            <li>
+              <img src={check} alt="" />
+              Post-course career assistance
+            </li>
+          </ul>
+          <div className="homeWhyMainBtn">
+            <button>
+              Lets get started{" "}
+              <FontAwesomeIcon
+                icon={faBell}
+                className="whyIcon"
+              ></FontAwesomeIcon>
+            </button>
+          </div>
+        </div>
+        <div className="homeWhyWrapper">
+          <img src={whyBanner} alt="" />
+        </div>
+      </div>
     </div>
   );
 };

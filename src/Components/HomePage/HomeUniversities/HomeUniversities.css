@@ -7,7 +7,7 @@
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-  background-color: var(--customColor1);
+  /* background-color: var(--customColor1); */
 }
 .homeUniversitiesContent {
   width: 100%;
@@ -15,24 +15,70 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  gap: 30px;
   flex-wrap: wrap;
 }
 .homeUniversitiesCard {
-  width: 200px;
-  height: 120px;
-  border-bottom: 7px solid var(--customColor2);
+  /* border: solid red; */
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
   background-color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
-  border-radius: 20px;
-  overflow: hidden;
-  margin: 10px;
+  box-shadow: 0 0 10px 1px rgb(0, 0, 0);
+  padding-bottom: 10px;
+  margin: 20px;
 }
-.homeUniversitiesCard > img {
+.homeUniversitiesCard-content1 {
   width: 100%;
+  height: 200px;
+  position: relative;
+}
+.homeUniversitiesCard-content1 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.homeUniversitiesCard-content1 > span {
+  position: absolute;
+  z-index: 1;
+  top: 60px;
+  left: 0;
+  width: 100px;
+  height: 50px;
+  background-color: white;
+}
+.homeUniversitiesCard-content1 > span > img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.homeUniversitiesCard-content2 {
+  margin-left: 20px;
+  width: 350px;
+}
+.homeUniversitiesCard-content2 > h3 {
+  font-size: 20px;
+  text-align: start;
+}
+.homeUniversitiesCard-content3 > li {
+  /* border: solid; */
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  width: 350px;
+}
+.uniIcon {
+  width: 20px;
+  height: 20px;
+  color: var(--customColor2);
 }
 .homeUniversitiesBtn {
   width: 100%;
@@ -41,14 +87,53 @@
   align-items: center;
 }
 .homeUniversitiesBtn > button {
-  padding: 10px;
-  border-radius: 20px;
+  padding: 6px;
+  border-radius: 5px;
   width: 130px;
   font-weight: 500;
-  border: solid white;
+  border: 1px solid white;
   background-color: var(--customColor2);
   color: white;
   &:hover {
-    background-color: var(--customColor1);
+    color: var(--customColor1);
+    border: 1px solid var(--customColor2);
+    background-color: white;
+  }
+}
+.homeUniversitiesBtn:nth-child(2) > button {
+  padding: 6px;
+  border-radius: 5px;
+  width: 170px;
+  font-weight: 500;
+  border: 1px solid white;
+  background-color: var(--customColor1);
+  color: white;
+  &:hover {
+    color: var(--customColor2);
+    border: 1px solid var(--customColor1);
+    background-color: white;
+  }
+}
+.homeUniversitiesCard-content4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .homeUniversitiesContainer {
+    /* border: solid red; */
+    width: 100%;
+    padding: 0px;
+  }
+  .homeUniversitiesContent {
+    width: 100%;
+    padding: 0px;
+    flex-wrap: wrap;
+  }
+  .homeUniversitiesCard {
+    /* border: solid red; */
+    min-width: 300px;
+    height: 450px;
   }
 }

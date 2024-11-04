@@ -9,6 +9,9 @@
   background-color: white;
   padding: 20px;
 }
+.homeCoursesHead {
+  width: 90%;
+}
 .homeCoursesHead > h2 {
   /* border: solid; */
   text-align: center;
@@ -20,6 +23,7 @@
   font-size: 18px;
   text-align: center;
   color: grey;
+  width: 100%;
 }
 .homeCoursesMain {
   /* border: solid green; */
@@ -52,9 +56,11 @@
   flex-direction: column;
   gap: 20px;
 }
+.homeCoursesCard > a > h6 {
+  text-align: center;
+}
 .homeCoursesCard > a > img {
   width: 30%;
   height: 40%;
   object-fit: contain;
 }
-

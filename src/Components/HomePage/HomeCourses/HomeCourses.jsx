@@ -4,7 +4,7 @@ import HomeCoursesHead from "./HomeCoursesHead";
 import HomeCoursesMain from "./HomeCoursesMain";
 const HomeCourses = () => {
   return (
-    <div className="homeCourses">
+    <div className="homeCourses" id="homeCoursesNav">
       <HomeCoursesHead />
       <HomeCoursesMain />
     </div>

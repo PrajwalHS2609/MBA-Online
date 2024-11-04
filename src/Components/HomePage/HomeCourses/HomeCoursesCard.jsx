@@ -5,7 +5,7 @@ const HomeCoursesCard = (props) => {
   return (
     <div className="homeCoursesCard">
       <Link to={"/"}>
-        <h6>{props.course}</h6>
+        <h6>{props.course} <br />{props.course2}</h6>
       </Link>
     </div>
   );

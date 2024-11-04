@@ -31,12 +31,12 @@ const HomeEnquiryContact = () => {
           className="homeEnquiryContactCard"
           id="homeEnquiryContactCard-whats"
         >
-          <a href="https://wa.me/1234567890">
-            {" "}
-            <FontAwesomeIcon
-              icon={faCommentDots}
-              className="homeEnquiryIcon"
-            ></FontAwesomeIcon>{" "}
+          <a
+            href="https://wa.me/916362946008"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faCommentDots} className="homeEnquiryIcon" />
             Live Chat with Experts
           </a>
         </div>

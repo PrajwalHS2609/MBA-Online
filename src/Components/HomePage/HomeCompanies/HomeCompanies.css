@@ -48,4 +48,24 @@
   .homeCompanies {
     flex-direction: column;
   }
+  .homeCompaniesHead {
+    /* border: solid red; */
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .homeCompaniesHead > h2 {
+    /* border: solid red; */
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .homeCompaniesImgWrapper {
+    flex-direction: column;
+  }
 }
