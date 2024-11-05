@@ -1,6 +1,6 @@
 import React from "react";
 import "./NavBar.css";
-import logo from "./../../Imgs/Edu Logo.png";
+// import logo from "./../../Imgs/Edu Logo.png";
 const Logo = () => {
   return (
     <div className="logoContainer">

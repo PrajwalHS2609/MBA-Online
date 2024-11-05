@@ -200,7 +200,10 @@
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .homeEnquiry {
-    flex-direction: column-reverse;gap: 20px;
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 10px;
+
   }
   .homeEnquiryContent {
     /* border: solid green; */
@@ -221,11 +224,10 @@
     align-items: center;
     flex-direction: column;
     gap: 40px;
-    width:350px;
+    width: 350px;
   }
-  .homeEnquiryForm > div {
+
+  .enquirySocial {
     width: 100%;
-    text-align: end;
-    padding: 10px;
   }
 }
